@@ -1,3 +1,11 @@
 index:
     path: /
     controller: App\Controller\DefaultController::index
+
+contacts:
+    path: /contacts
+    controller: App\Controller\ContactsController::index
+
+promotion:
+    path: /promotion
+    controller: App\Controller\PromotionController::index
