@@ -1,3 +1,42 @@
-.color1 {
-  background-color: #EFEBE9;
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+body {
+  background-color: #f8f9fa;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  z-index: -1;
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+
+}
+
+.card-offer {
+  padding: 0;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.cvet {
+  color: white;
 }

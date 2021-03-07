@@ -6,16 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DeafultController extends AbstractController
+class AddressController extends AbstractController
 {
     /**
-     * @Route("/", name="deafult")
+     * @Route("/address", name="address")
      */
     public function index(): Response
     {
-        return $this->render('deafult/index.html.twig', [
-            'controller_name' => 'DeafultController',
+        return $this->render('address/index.html.twig', [
+            'controller_name' => 'AddressController',
         ]);
     }
-
 }

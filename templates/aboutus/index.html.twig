@@ -2,19 +2,39 @@
 
 {% block title %}Hello AboutusController!{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block main %}
+  <div class="bg-image p-5 text-center shadow-1-strong rounded text-white" style="margin: 0;">
+    <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo" class="content">
+      <source src="../video/smoke.mp4" type="video/mp4">
+    </video>
+    <h1 class="mb-3 h2">ITMO</h1>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Applications/MAMP/htdocs/Kalian/src/Controller/AboutusController.php'|file_link(0) }}">src/Controller/AboutusController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Applications/MAMP/htdocs/Kalian/templates/aboutus/index.html.twig'|file_link(0) }}">templates/aboutus/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <p>ИТМО ЛАУНДЖ — место для всех, кто ищет нетривиальный ресторан, готов оценить авторские находки миксологов и погрузиться в атмосферу модного заведения для особенных гостей. Интерьер сочетает в себе английскую классику и гранж, а концепция заведения
+      тесно связана с легендой о Мистере К. - загадочном хозяине Особняка.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start">
+          Особое внимание создатели заведения уделили чайной карте, которая насчитывает более 60 наименований чая из Китая, Тайваня и Японии. Также в барном меню представлены авторские коктейли и хороший выбор вина, пива и крепкого алкоголя.
+        </div>
+        <div class="col align-self-center">
+          Меню в ИТМО ЛАУНДЖ — это бленд европейской и азиатской кухни, способный впечатлить любого гурмана. В меню есть всё: начиная от нежных закусок, и заканчивая сочным мясом на гриле. В некоторых Особняках действуют завтраки и специальные предложения.
+        </div>
+        <div class="col align-self-end">
+          В дымном меню Особняка представлено более 100 позиций табаков от премиальных производителей из разных стран. Особое место занимает широкая линейка вкусов табака Tangiers — именитого бренда из США. Мастера ITMO Lounge подберут индивидуальное сочетание
+          по крепости и вкусам в соответствии с любыми предпочтениями гостя.
+        </div>
+      </div>
+    </div>
+    <p>Дата основания: 26 марта 1900 года.</p>
+    <p>Учредителем Университета ИТМО является Российская Федерация. Функции и полномочия учредителя Университета ИТМО от имени Российской Федерации осуществляет Министерство науки и высшего образования Российской Федерации (далее – Минобрнауки России).</p>
+    <p>Руководитель Минобрнауки России: Министр науки и высшего образования Российской Федерации Фальков Валерий Николаевич.</p>
+    <p>Адрес Минобрнауки России: Россия, 125993, Москва, улица Тверская, дом 11, ГСП-3.</p>
+  </div>
+  <div class="jumbotron" style="margin: 0;">
+    <h1 class="display-4">Стать частью нашей команды</h1>
+    <p class="lead">Мы даём возможность стать частью нашей команды, продавая франшизу под ключ</p>
+    <hr class="my-4">
+    <p>Все подробности тут.</p>
+    <a class="btn btn-primary btn-lg" href="/" role="button">Узнать больше</a>
+  </div>
 {% endblock %}

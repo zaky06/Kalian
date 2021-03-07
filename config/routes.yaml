@@ -1,11 +1,19 @@
-index:
+default:
     path: /
     controller: App\Controller\DefaultController::index
 
-contacts:
-    path: /contacts
-    controller: App\Controller\ContactsController::index
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
 
 promotion:
     path: /promotion
     controller: App\Controller\PromotionController::index
+
+aboutus:
+  path: /aboutus
+  controller: App\Controller\AboutusController::index
+
+address:
+  path: /address
+  controller: App\Controller\AddressController::index

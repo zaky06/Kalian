@@ -1,108 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>ITMOKALIAN</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css">
-  <script
-          src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- Font Awesome -->
-  <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-          rel="stylesheet"
-  />
+  <head>
+    <meta charset="utf-8">
+    <title>ITMOKALIAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 
-</head>
-<body>
-<!-- Image and text -->
-<nav class="navbar navbar-light color1">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="../img/itmo.png" alt="" width="70" height="55" class="d-inline-block align-top">
-      Кальянная ИТМО
-    </a>
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Акции</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">О нас</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Адреса</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">+7 (812) 232–97–04</a>
-    </li>
-  </div>
-</nav>
+  </head>
+  <body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="../img/itmo.png" alt="" width="70" height="55" class="d-inline-block align-top">
+          Кальянная ИТМО
+        </a>
+        <li class="nav-item">
+          <a class="nav-link text-warning" aria-current="page" href="/promotion">Акции</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="/aboutus">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="/address">Адрес</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning disabled" href="">+7 (812) 232–97–04</a>
+        </li>
+      </div>
+    </nav>
 
-{% block main %}{% endblock main%}
+    {% block main %}{% endblock main %}
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://ru-ru.facebook.com/spbifmo/" role="button">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/spbifmo" role="button">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/itmoru/?hl=ru" role="button">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </section>
+        <!-- Section: Social media -->
 
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://ru-ru.facebook.com/spbifmo/" role="button"><i class="fab fa-facebook-f"></i></a>
-      <!-- Twitter -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/spbifmo" role="button"><i class="fab fa-twitter"></i></a>
-      <!-- Instagram -->
-      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://www.instagram.com/itmoru/?hl=ru" role="button"><i class="fab fa-instagram"></i></a>
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Form -->
-    <section class="">
-      <form action="">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>Подпишитесь на нашу рассылку</strong>
+        <!-- Section: Form -->
+        <section class="">
+          <form action="" method="POST">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Подпишитесь на нашу рассылку</strong>
+                </p>
+              </div>
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input name="email" type="email" id="form5Example2" placeholder="email" class="form-control"/>
+                  <label class="form-label" for="form5Example2"></label>
+                </div>
+              </div>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Подписаться
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="mb-4">
+            <p>
+              Кальян ИТМО - уникальный и самый масштабный Lounge проект Санкт-Петербурга
             </p>
-          </div>
-          <!--Grid column-->
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://itmo.ru/ru/page/169/obrazovanie.html">LoungeBarITMO.ru</a>
+        </div>
+      </footer>
+      <!-- Footer -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+      <script src="/docs/5.0/assets/js/docs.min.js"></script>
 
-          <!--Grid column-->
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example2" placeholder="email" class="form-control" />
-              <label class="form-label" for="form5Example2"></label>
-            </div>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-auto">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-outline-light mb-4">
-              Подписаться
-            </button>
-          </div>
-      </form>
-    </section>
-    <section class="mb-4">
-      <p>
-        Кальян ИТМО - уникальный и самый масштабный Lounge проект Санкт-Петербурга
-      </p>
-    </section>
-  </div>
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-white" href="https://itmo.ru/ru/page/169/obrazovanie.html">LoungeBarITMO.ru</a>
-  </div>
-
-</footer>
-<!-- Footer -->
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-</html>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </body>
+  </html>
